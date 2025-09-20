@@ -1,0 +1,5 @@
+<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+<div *ngFor="let todo of tdo">
+    <h4>Your Todos</h4>
+    <app-todo-item [todo]="todo" (todoDelete)="deletetodo($event)"> </app-todo-item>
+</div>
